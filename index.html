@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/fadacai.css">
+</head>
+<body>
+    <div id="bg">
+        <css-doodle>
+        :doodle { @grid: 7/ 100vw 100vh; background: transparent; }
+        background-image: url(./assets/img/m0@pick(1, 2, 3, 4).png);
+        background-size:contain; background-repeat:no-repeat; position:
+        absolute; @size: 10em; @place-cell: @rand(0, 20)% -20vh; left:
+        @rand(-100, 100)%; animation: move 5s linear @rand(0, 7)s infinite;
+        @keyframes move { 0% { transform: translateX( @rand(-10,-10)vw )
+        translateY(0vh) rotate(@rand(0, 72)deg); } 25% { transform: translateX(
+        @rand(-10,-10)vw ) translateY(35vh) rotate(@rand(73, 144)deg); } 50% {
+        transform: translateX( @rand(-10,-10)vw ) translateY(70vh)
+        rotate(@rand(145, 216)deg); } 75% { transform: translateX(
+        @rand(-10,-10)vw ) translateY(105vh) rotate(@rand(217, 288)deg); }
+        99.99% { transform: translateX( @rand(-10,-10)vw ) translateY(140vh)
+        rotate(@rand(289, 360)deg); } 100% { transform: translateX(
+        @rand(-10,-10)vw ) translateY(0vh) rotate(0deg); } }
+        </css-doodle>
+    </div>
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-12">
+                <img src="./assets/img/title.png" alt="" style="width: 100%">
+            </div>
+        </div>
+        
+    </div>
+    <script src="./assets/js/css-doodle.min.js"></script>
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
